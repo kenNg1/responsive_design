@@ -1,0 +1,569 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  color: #6f6f6f;
+  font-weight: 100;
+  line-height: 2rem;
+  -webkit-font-smoothing: antialiased
+}
+
+#opener {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 1.7rem;
+    font-size: 17px;
+    letter-spacing: 2px;
+    display: inline-block;
+    z-index: 10;
+    position: relative;
+    margin-left: 10%;
+}
+
+h1 {
+    font-family: Lato, sans-serif;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+span {
+    font-family: Playfair Display, serif;
+    font-size: 45px;
+    color: #6f6f6f
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block
+}
+
+a {
+  text-decoration: none;
+  color: #ed6464;
+}
+
+#scroll {
+    height: 1vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 1;
+    position: relative;
+    background-color: #fff;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+#brand {
+  margin-top: 15px;
+  height: 50px;
+  padding: 5px 7px 5px 7px;
+}
+
+#portrait {
+  position: absolute;
+  z-index: 0;
+  right: 7.5%;
+  max-height: 57vh;
+  top: 0;
+  transition: right .4s ease-in;
+  border-radius: 3px;
+}
+
+#top:before, #portfolio:before, #aboutMe:before {
+ border-top: 2px solid rgb(255, 27, 27);
+ content:"";
+ margin: 0; /* this centers the line to the full width specified */
+ position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+ top: 10%; left: 5%; right: 0; bottom: 0;
+ width: 4.5%;
+ z-index: -1;
+}
+
+#top {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 65vh;
+    margin-top: 80px
+}
+
+#top p, #top i {
+    margin-left: calc(10%);
+    width: 45%
+}
+
+#top i{
+  display: block;
+
+}
+
+#top p:first-of-type {
+    margin-top: 20px
+}
+
+#top .btn:first-of-type {
+    margin-right: 20px;
+    margin-left: calc(10% + 10px);
+    margin-top: 20px
+}
+
+#portfolio span, #aboutMe span {
+  margin-left: calc(10%);
+}
+
+#portfolio {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 65vh;
+    margin-top: 80px
+}
+
+#portfolio p, #portfolio i {
+    margin-left: calc(10%);
+    width: 45%
+}
+
+#portfolio i{
+  display: block;
+
+}
+
+#portfolio p:first-of-type {
+    margin-top: 20px
+}
+
+#portfolio .btn:first-of-type {
+    margin-right: 20px;
+    margin-left: calc(10% + 10px);
+    margin-top: 20px
+}
+
+
+#aboutMe {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 65vh;
+    margin-aboutMe: 80px
+}
+
+#aboutMe p, #aboutMe i {
+    margin-left: calc(10%);
+    width: 45%
+}
+
+#aboutMe i{
+  display: block;
+
+}
+
+#aboutMe p:first-of-type {
+    margin-aboutMe: 20px
+}
+
+#aboutMe .btn:first-of-type {
+    margin-right: 20px;
+    margin-left: calc(10% + 10px);
+    margin-aboutMe: 20px
+}
+
+button, .btn, .btn:focus {
+    padding: 10px 30px;
+    border: solid 2px #ed6464;
+    position: relative;
+    color: #FF0416;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all .2s ease-in;
+    outline: none;
+    display: inline-block;
+    background: none;
+    font-weight: 600
+}
+
+header {
+    display: flex;
+    width: 100%;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 3px rgba(47, 47, 47, 0.05);
+    position: fixed;
+    background: #fff;
+    z-index: 101;
+    top: 0;
+    margin-top: 0;
+    height: 60px;
+}
+
+header .logo {
+    /*display: none*/
+}
+
+header nav li {
+    display: inline-block;
+    padding: 0;
+    list-style: none;
+    margin-right: 25px;
+    border-bottom: solid 0 red
+}
+
+header nav li:hover {
+    border-bottom: solid 1px red;
+    cursor: pointer
+}
+
+header nav li:last-of-type {
+    margin-right: 0
+}
+
+header nav .btn {
+    padding: 5px 20px;
+    background: #ed6464;
+    color: #fff;
+    border-bottom: 0
+}
+
+header nav .btn a, header nav .btn a:hover {
+    color: #FF0416
+}
+
+header nav .btn:hover {
+    padding: 5px 20px;
+    cursor: pointer;
+    border-bottom: 0
+}
+
+
+ul.shots {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+ul.shots li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    transition: all ease .4s;
+    max-height: 300px
+}
+
+ul.shots li img {
+    transition: all ease .3s
+}
+
+
+ul.shots li img {
+    width: 100%
+}
+
+@media only screen and (min-width: 700px) {
+
+header .logo{
+    display: block;
+    width: 50%;
+    font-family: Playfair Display, serif
+}
+
+header nav li {
+    display: inline-block;
+    padding: 0;
+    list-style: none;
+    margin-right: 25px;
+    border-bottom: solid 0 red
+}
+
+header nav li:hover {
+    border-bottom: solid 1px red;
+    cursor: pointer
+}
+
+header nav li:last-of-type {
+    margin-right: 0
+}
+
+header nav .btn {
+    padding: 5px 20px;
+    background: #E60416;
+    color: #fff;
+    border-bottom: 0
+}
+
+header nav .btn a, header nav .btn a:hover {
+    color: #fff
+}
+
+header nav .btn:hover {
+    padding: 5px 20px;
+    cursor: pointer;
+    border-bottom: 0
+}
+
+ul.shots {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/*ul.shots div {
+  display: none;
+}*/
+
+ul.shots li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 50%
+}
+
+ul.shots li:hover .shot {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 102;
+}
+
+/*ul.shots li:hover .shot-1 {
+  border: 1px solid black;
+  border-radius: 10px;
+  transform: scale(0.65, 0.65);
+  transform-origin:  centre ;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  position: fixed;
+  top: -105px;
+  left: 20px;
+}*/
+
+ul.shots li:hover img{
+  border: 1px solid black;
+  border-radius: 10px;
+  transform: scale(0.5, 0.5);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: -70px;
+  left: 20px;
+  -webkit-transition: transform 0.2s ease-in-out;
+}
+
+ul.shots li:hover .shot-1{
+  transform-origin:  left ;
+}
+
+ul.shots li:hover .shot-4{
+  transform-origin:  bottom left ;
+}
+
+ul.shots li:hover .shot-3{
+  transform-origin:  right ;
+}
+
+ul.shots li:hover .shot-6{
+  transform-origin:  bottom right;
+}
+
+/*ul.shots li:hover .shot-5 {
+  border: 1px solid black;
+  border-radius: 10px;
+  transform: scale(0.65, 0.65);
+  transform-origin:  centre ;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  position: fixed;
+  top: -110px;
+  left: 20px;
+
+}*/
+
+ul.shots:hover .close {
+  display:static;
+
+}
+
+}
+
+@media screen and (max-width:600px) {
+  .portrait {
+      position: relative;
+      width: calc(100% + 30px);
+      height: auto;
+      left: -15px;
+      max-height: inherit
+  }
+
+  #top {
+      height: auto
+  }
+  #top p {
+      margin-left: calc(10% + 10px);
+      width: calc(75% - 10px)
+  }
+  #top .btn {
+      padding: 10px 20px 10px 50px;
+      width: 90%;
+      margin: 50px auto;
+      display: block;
+      font-size: 14px
+  }
+  h1 {
+      padding-left: 10%
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:1024px) {
+  #top {
+      height: auto
+  }
+  #top .intro {
+      margin-left: 10%;
+      width: 40%;
+      display: inline-block
+  }
+  #top .intro p {
+      width: 100%;
+      margin: 40px 0 0
+  }
+  #top .btn {
+      padding: 10px 20px 10px 50px;
+      width: 90%;
+      margin: 50px auto;
+      display: block;
+      font-size: 14px
+  }
+  #top .portrait {
+      position: relative;
+      width: 49%;
+      margin-top: 40px;
+      right: inherit;
+      height: auto;
+      max-height: inherit;
+      display: inline-block;
+      vertical-align: top
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  ul.shots {
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    padding: 3px;
+    margin: 0;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  ul.shots li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 33.3%;
+  }
+  ul.shots a {
+    margin: 0;
+  }
+
+  .singleButton {
+      margin-top: 25px;
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-left: -65px;
+  }
+
+  #aboutMe {
+    margin-top: 300px;
+  }
+}
+
+
+/* =Return to top button
+----------------------------------------------- */
+.arrow1, .arrow2 {
+	width: 58px;
+	height: 58px;
+	border-radius: 50%;
+	background-color: rgba(245, 63, 58, 0.5);
+	text-indent: -9999px;
+	z-index: 99;
+	display: none;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+	-webkit-animation: slideup 1s ease;
+	-moz-animation: slideup 5s ease;
+	animation: slideup 1s ease;
+}
+
+.arrow1 {
+  position: relative;
+  bottom: 30px;
+  left: 50%;
+  transform: rotate(180deg);
+}
+
+.arrow2 {
+  position: fixed;
+  bottom: 50px;
+	right: 8%;
+}
+
+body > div.arrow1 a {
+	width: 58px;
+	height: 58px;
+	background-image: url('../images/arrow.png');
+	display: block;
+}
+
+body > div.arrow2 a {
+	width: 58px;
+	height: 58px;
+	background-image: url('../images/arrow.png');
+	display: block;
+}
+
+.return_scroll {
+	display: block !important;
+}
+
+.return_scroll:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*for ref only*/
+@media screen and (max-width:600px) {}
+@media screen and (min-width:600px) and (max-width:1024px) {}
+@media only screen and (min-width: 700px) {}
+@media only screen and (min-width: 1200px) {}
+/*end*/
