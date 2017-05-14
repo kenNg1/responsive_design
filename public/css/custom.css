@@ -560,6 +560,12 @@ body > div.arrow2 a {
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
+#galaxy {
+  background: -moz-linear-gradient(45deg, #070a23 0%, #090f31 50%, #070d2d 54%, #0c1744 82%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #070a23 0%,#090f31 50%,#070d2d 54%,#0c1744 82%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #070a23 0%,#090f31 50%,#070d2d 54%,#0c1744 82%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
 
 /*for ref only*/
 @media screen and (max-width:600px) {}
