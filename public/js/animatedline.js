@@ -25,7 +25,7 @@ var tween = new TimelineMax()
 //build scene
 var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 1300, offset: -300, tweenChanges: false})
 				.setTween(tween)
-				.addIndicators() // add indicators (requires plugin)
+				// .addIndicators() // add indicators (requires plugin)
 				.addTo(controller);
 
 scene.on("start", function (event) {
