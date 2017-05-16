@@ -23,11 +23,13 @@ var tween = new TimelineMax()
 	.add(TweenMax.to("path", 1, {stroke: "rgb(235, 255, 0)", ease:Linear.easeNone}), 0);			// change color during the whole thing
 
 //build scene
-var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 1300, offset: -300, tweenChanges: false})
+var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 1300, offset: -310, tweenChanges: false})
 				.setTween(tween)
-				// .addIndicators() // add indicators (requires plugin)
+				.addIndicators() // add indicators (requires plugin)
 				.addTo(controller);
 
 scene.on("start", function (event) {
     console.log("Hit start point of scene.");
 });
+
+$("#word").attr("width",)

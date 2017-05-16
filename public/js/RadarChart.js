@@ -38,7 +38,6 @@ var RadarChart = {
 			.attr("height", cfg.h+cfg.ExtraWidthY)
 			.append("g")
 			.attr("transform", "translate(" + cfg.TranslateX + "," + cfg.TranslateY + ")");
-			;
 
 	var tooltip;
 
@@ -112,6 +111,7 @@ var RadarChart = {
     .attr("height", "20px");
 
   axis.append("image")
+    .attr("id","node")
     .attr("xlink:href", "images/icons/node.png")
     .attr("text-anchor", "middle")
     .attr("transform", "translate(-80,80)")
