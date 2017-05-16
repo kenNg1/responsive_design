@@ -1,6 +1,6 @@
 <% layout('layout') -%>
 <a id="backtotop"></a>
-<section id="top">
+<section id="top" style="">
   <h1 id="opener">HELLO, I'M KEN A
      <span>WEB DEVELOPER</span>
   </h1>
@@ -13,10 +13,6 @@
   </div>
   <img id="portrait" src="images/portrait.jpg" alt="">
 </section>
-
-<div class="arrow1 return_scroll">
-    <a href="#portfolio">Return to top</a>
-</div>
 
 <section id="portfolio">
   <span>My Portfolio</span>
@@ -35,57 +31,22 @@
 </section>
 
 <section id="aboutMe">
-  <span>Who am I?</span>
+  <span>My Experience</span>
   <div class="twoColContent">
-    <p>Lorem ipsum.</p>
-    <p>Lorem ipsum.</p>
-
-    <p>Lorem ipsum. <a href="#contactMe">let's talk</a>.</p>
-    <p>Lorem ipsum.</p>
+    <p>I was born and raised in the UK</p>
+    <p>Studied Economics at University of York</p>
+    <p>Worked in Banking operations for four years</p>
+    <p>Managed a team for two years</p>
+    <p>Resigned from my role to pursue a more fulfilling career</p>
     <a href="#contactMe">Let's Talk</a>
+    <div id="chart"></div>
   </div>
-  <div id="chart"></div>
 </section>
-
-<script type="text/javascript">
-var w = 500,
-h = 500;
-
-var colorscale = d3.scale.category10();
-
-//Data
-var d = [
-    [
-    {axis:"HTML/CSS",value:5},
-    {axis:"Javascript",value:3.5},
-    {axis:"NodeJS/Express",value:3},
-    {axis:"Ember",value:4},
-    {axis:"Angular",value:3},
-    {axis:"Python",value:2},
-    {axis:"Firebase",value:4},
-    {axis:"PostgreSQL",value:4},
-    {axis:"Ruby on Rails",value:4},
-    ]
-  ];
-
-//Options for the Radar chart, other than default
-var mycfg = {
-w: w*.55,
-h: h*.55,
-radius: 4,
-maxValue: 5,
-levels: 10,
-ExtraWidthX: 300
-}
-
-//Call function to draw the Radar chart
-//Will expect that data is in %'s
-RadarChart.draw("#chart", d, mycfg);
-
-</script>
 
 <!-- <div class="arrow2 return_scroll">
   <a href="#backtotop">Return to top</a>
 </div> -->
-
-<% include ../partials/animation %>
+<section id="timeline">
+  <span>My Timeline</span>
+<% include ../partials/animatedline %>
+</section>

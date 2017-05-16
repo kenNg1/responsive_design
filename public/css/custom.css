@@ -84,7 +84,9 @@ a {
   border-radius: 3px;
 }
 
-#top:before, #portfolio:before, #aboutMe:before {
+
+
+#top:before, #portfolio:before, #aboutMe:before, #timeline:before {
  border-top: 2px solid rgb(255, 27, 27);
  content:"";
  margin: 0; /* this centers the line to the full width specified */
@@ -122,7 +124,7 @@ a {
     margin-top: 20px
 }
 
-#portfolio span, #aboutMe span {
+#portfolio span, #aboutMe span, #timeline span {
   margin-left: calc(10%);
 }
 
@@ -131,7 +133,7 @@ a {
     margin: 0 auto;
     position: relative;
     height: 65vh;
-    margin-top: 80px
+    margin-top: 20px
 }
 
 #portfolio p, #portfolio i {
@@ -160,8 +162,9 @@ a {
     margin: 0 auto;
     position: relative;
     height: 65vh;
-    margin-aboutMe: 80px
+    margin-top: 500px
 }
+
 
 #aboutMe p, #aboutMe i {
     margin-left: calc(10%);
@@ -170,17 +173,24 @@ a {
 
 #aboutMe i{
   display: block;
-
 }
 
 #aboutMe p:first-of-type {
-    margin-aboutMe: 20px
+    margin-top: 20px
 }
 
 #aboutMe .btn:first-of-type {
     margin-right: 20px;
     margin-left: calc(10% + 10px);
-    margin-aboutMe: 20px
+    margin-top: 20px
+}
+
+#timeline {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 65vh;
+    margin-top: 80px
 }
 
 button, .btn, .btn:focus {
@@ -281,6 +291,10 @@ ul.shots li img {
 }
 
 @media only screen and (min-width: 700px) {
+
+#top {
+  margin-top: 100px
+}
 
 header .logo{
     display: block;
@@ -441,8 +455,9 @@ ul.shots:hover .close {
 
 @media screen and (min-width:600px) and (max-width:1024px) {
   #top {
-      height: auto
+      height: auto;
   }
+
   #top .intro {
       margin-left: 10%;
       width: 40%;
@@ -502,7 +517,11 @@ ul.shots:hover .close {
   }
 
   #aboutMe {
-    margin-top: 300px;
+    margin-top: 350px;
+  }
+
+  #timeline {
+    margin-top: 0px;
   }
 }
 
@@ -561,17 +580,30 @@ body > div.arrow2 a {
 }
 
 #galaxy {
+  margin-top: 10px;
+  margin-left: 15%;
   border-radius: 30px;
-  background: -moz-linear-gradient(45deg, #070a23 0%, #090f31 50%, #070d2d 54%, #0c1744 82%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, #070a23 0%,#090f31 50%,#070d2d 54%,#0c1744 82%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #070a23 0%,#090f31 50%,#070d2d 54%,#0c1744 82%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(45deg, #070a20 0%, #090f31 50%, #070d2d 54%, #0c1744 82%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #070a20 0%,#090f31 50%,#070d2d 54%,#0c1744 82%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #070a20 0%,#090f31 50%,#070d2d 54%,#0c1744 82%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 #chart {
   position: relative;
-  top: -250px;
+  top: -300px;
   left: 700px;
 }
+
+footer {
+  position: relative;
+  bottom: -1400px;
+}
+
+.spacer {
+	text-align: center;
+	min-height: 30px;
+}
+
 
 
 /*for ref only*/
