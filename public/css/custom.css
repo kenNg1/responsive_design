@@ -561,9 +561,16 @@ body > div.arrow2 a {
 }
 
 #galaxy {
+  border-radius: 30px;
   background: -moz-linear-gradient(45deg, #070a23 0%, #090f31 50%, #070d2d 54%, #0c1744 82%); /* FF3.6-15 */
   background: -webkit-linear-gradient(45deg, #070a23 0%,#090f31 50%,#070d2d 54%,#0c1744 82%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(45deg, #070a23 0%,#090f31 50%,#070d2d 54%,#0c1744 82%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#chart {
+  position: relative;
+  top: -250px;
+  left: 700px;
 }
 
 
