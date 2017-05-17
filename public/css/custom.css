@@ -155,7 +155,7 @@ a {
     width: 100%;
     margin: 0 auto;
     position: relative;
-    height: 70vh;
+    height: 80vh;
     margin-top: 20px
 }
 
@@ -404,7 +404,10 @@ ul.shots li {
     list-style: none;
     padding: 0;
     margin: 0;
-    width: 50%
+    width: 50%;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
 }
 
 ul.shots li:hover .shot {
