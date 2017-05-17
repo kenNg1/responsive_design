@@ -85,13 +85,22 @@ a {
 }
 
 
-
-#top:before, #portfolio:before, #aboutMe:before, #timeline:before {
+#top:before, #portfolio:before, #aboutMe:before {
  border-top: 2px solid rgb(255, 27, 27);
  content:"";
  margin: 0; /* this centers the line to the full width specified */
  position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
  top: 10%; left: 5%; right: 0; bottom: 0;
+ width: 4.5%;
+ z-index: -1;
+}
+
+#timeline:before {
+ border-top: 2px solid rgb(255, 27, 27);
+ content:"";
+ margin: 0; /* this centers the line to the full width specified */
+ position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+ top: 20%; left: 5%; right: 0; bottom: 0;
  width: 4.5%;
  z-index: -1;
 }
@@ -146,7 +155,7 @@ a {
     width: 100%;
     margin: 0 auto;
     position: relative;
-    height: 65vh;
+    height: 70vh;
     margin-top: 20px
 }
 
@@ -173,7 +182,7 @@ a {
 
 #aboutMe{
     width: 100%;
-    margin: 0 auto;
+    margin: 30px auto;
     position: relative;
     height: 65vh;
     margin-top: 500px
@@ -205,12 +214,9 @@ a {
     margin: 0 auto;
     position: relative;
     height: 65vh;
-    margin-top: 80px
+    margin-top: 0px
 }
 
-.ts {
-  border: 1px solid red;
-}
 .ts p {
   position:absolute;
   text-align: right;
@@ -336,7 +342,7 @@ ul.shots li img {
 @media only screen and (min-width: 700px) {
 
 #top {
-  margin-top: 100px
+  margin-top: 110px
 }
 
 header .logo{
@@ -472,9 +478,60 @@ ul.shots:hover .close {
 
 }
 
+.tile {
+  margin-left: calc(10%);
+  margin-top: 5px;
+  height: 100px;
+  width: 550px;
+  line-height: 100px;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.tile:first-of-type {
+  margin-top: 45px;
+}
+
+.tile:nth-of-type(2) {
+
+}
+
+.tile:nth-of-type(3) {
+
+}
+
+.fa {
+  position: absolute;
+}
+
+.fa-paint-brush {
+  color: purple;
+  top: 120px;
+  left: -160px;
+  font-size: 35px;
+}
+
+.fa-line-chart {
+  color: rgb(36, 124, 227);
+  top: 230px;
+  left: -160px;
+  font-size: 35px;
+}
+
+.fa-users {
+  color: rgb(247, 98, 14);
+  top: 332px;
+  left: -190px;
+  font-size: 35px;
+}
+
 }
 
 @media screen and (max-width:600px) {
+
+
   .portrait {
       position: relative;
       width: calc(100% + 30px);
@@ -639,13 +696,13 @@ body > div.arrow2 a {
 }
 
 #chart {
-  margin-top: 25px;
+  margin-top: 45px;
   margin-left: 25px;
 }
 
 footer {
   position: relative;
-  bottom: -1400px;
+  bottom: -1200px;
 }
 
 .spacer {

@@ -26,7 +26,7 @@ var tween = new TimelineMax()
 	.add(TweenMax.to("path", 1, {stroke: "rgb(235, 255, 0)", ease:Linear.easeNone}), 0);			// change color during the whole thing
 
 //build scene
-var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: ts_o_height * factor, offset: 0, tweenChanges: false})
+var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: ts_o_height * factor, offset: -200, tweenChanges: false})
 				.setTween(tween)
 				// .addIndicators() // add indicators (requires plugin)
 				.addTo(controller);
