@@ -2,7 +2,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  /*overflow-x: hidden;*/
+  overflow-x: hidden;
 }
 
 body {
@@ -230,8 +230,6 @@ a {
 #t5-4 { color: white; right: 39%; margin-top: -37%;font-style: italic;}
 #t6 { color: white; right: 31%; margin-top: -60%; }
 #t7 { color: white; right: 29%; margin-top: -34%; text-align: left}
-
-
 
 button, .btn, .btn:focus {
     padding: 10px 30px;
