@@ -342,7 +342,8 @@ ul.shots li img {
 @media only screen and (min-width: 700px) {
 
 #top {
-  margin-top: 110px
+  margin-top: 110px;
+  margin-left: 0%;
 }
 
 header .logo{
