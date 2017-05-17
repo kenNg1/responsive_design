@@ -208,21 +208,28 @@ a {
     margin-top: 80px
 }
 
+.ts {
+  border: 1px solid red;
+}
 .ts p {
   position:absolute;
   text-align: right;
-  font-size: 17px;
-  width: 130px;
+  font-size: 1.15vw;
+  width: 10vw;
   line-height: 18px;
 }
 
-#t1 { color: white; left: 65%; bottom: 15%; margin-top: 20%}
-#t2 { color: white; left: 940px; bottom: -95px; }
-#t3 { color: white; left: 220px; bottom: -110px; }
-#t4 { color: white; left: 330px; bottom: -300px; }
-#t5 { color: white; left: 730px; bottom: -155px; width: 200px}
-#t6 { color: white; left: 755px; bottom: -190px; }
-#t7 { color: white; left: 780px; bottom: -575px; text-align: left}
+#t1 { color: white; right: 20%; margin-top: -80%}
+#t2 { color: white; right: 17%; margin-top: -71%; }
+#t3 { color: white; right: 70%; margin-top: -66%; }
+#t4 { color: white; right: 70%; margin-top: -50%; text-align: left}
+#t5 { color: white; right: 28%; margin-top: -65%; width: 200px}
+#t5-1 { color: white; right: 27%; margin-top: -53%; font-style: italic;}
+#t5-2 { color: white; right: 37%; margin-top: -54%;font-style: italic;}
+#t5-3 { color: white; right: 44%; margin-top: -47%;font-style: italic;}
+#t5-4 { color: white; right: 39%; margin-top: -37%;font-style: italic;}
+#t6 { color: white; right: 31%; margin-top: -60%; }
+#t7 { color: white; right: 29%; margin-top: -34%; text-align: left}
 
 
 
@@ -415,16 +422,22 @@ ul.shots li:hover .shot {
   left: 20px;
 }*/
 
-ul.shots li:hover img{
+ul.shots li img{
+  opacity: 0.75;
+}
+
+ul.shots li:hover img {
   border: 1px solid black;
   border-radius: 10px;
   transform: scale(0.5, 0.5);
-  -webkit-transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
+  /*-webkit-transform-style: preserve-3d;*/
+  /*-webkit-backface-visibility: hidden;*/
   position: absolute;
   top: -70px;
   left: 20px;
-  -webkit-transition: transform 0.2s ease-in-out;
+  /*-webkit-transition: transform 0.2s ease-in-out;*/
+  opacity: 1;
+  transition: opacity .6s ease-in;
 }
 
 ul.shots li:hover .shot-1{
@@ -620,6 +633,7 @@ body > div.arrow2 a {
 #galaxy {
   margin-top: 10px;
   margin-left: 15%;
+  margin-right: 15%;
   border-radius: 30px;
   background: -moz-linear-gradient(45deg, #070a20 0%, #090f31 50%, #070d2d 54%, #0c1744 82%); /* FF3.6-15 */
   background: -webkit-linear-gradient(45deg, #070a20 0%,#090f31 50%,#070d2d 54%,#0c1744 82%); /* Chrome10-25,Safari5.1-6 */
