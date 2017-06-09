@@ -1,51 +1,168 @@
 <% layout('layout') -%>
-<a id="backtotop"></a>
-<section id="top" style="">
-  <h1 id="opener">HELLO, I'M KEN A
-     <span>WEB DEVELOPER</span>
-  </h1>
-  <div class="intro">
-    <p><strong>" </strong>Thanks for visiting my porfolio. I'm a freelance web developer based in Hong Kong</p>
-    <p>In the last 6 months I have ...</p>
-    <i>empowered myself to <b>create</b> digital products and</li></i>
-    <i>bolstered my understanding of <b>entreprenuership</b>,</li></i>
-    <i>so that I can <b>craft</b> my own future<strong> "</strong></li></i>
-  </div>
-  <img id="portrait" src="images/portrait.jpg" alt="">
-</section>
 
-<section id="portfolio">
-  <span>My Portfolio</span>
-  <h1>Here's different projects I've been working on ...</h1>
-  <ul class="shots">
-    <li>SMALL BUSINESS<a><img class="shot shot-1" src="images/hair.png"></a></li>
-    <li>MEDIUM-TERM RENTALS<a><img class="shot shot-2" src="images/nest-hunt.png"></a></li>
-    <li>DATA SCIENCE<a><img class="shot shot-3" src="images/datascience.png"></a></li>
-    <li>STOCK TRACKING API<a><img class="shot shot-4" src="images/stock.png"></a></li>
-    <li>NETWORKING APP<a href="/"><img class="shot shot-5" src="images/neca.png"></a></li>
-    <li>FITNESS APP<a><img class="shot shot-6" src="images/teamfinder.png"></a></li>
+<header>
+  <div class="section group">
+    <div class="col span_5_of_12">
+      <p id="logo">DESIGNER <br/> CLOTHING <span class="highlighted">.com</span></p>
+    </div>
+    <div class="col span_7_of_12">
+      <ul>
+        <li><a href="#">MY ACCOUNT</a><i class="fa fa-home"></i></li>
+        <li><a href="#">MY BASKET</a><i class="fa fa-tag"></i></li>
+        <li><a href="#">CHECKOUT</a><i class="fa fa-shopping-cart"></i></li>
+      </ul>
+    </div>
+
+    <div class="section group">
+
+      <div class="col span_6_of_12">
+      </div>
+
+      <div class="col span_6_of_12">
+        <form>
+          <input type="search" id="search" placeholder=" Search...">
+          <input type="button" id="click-btn" value="GO">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="section group">
+  <div class="col span_12_of_12">
+    <nav>
+      <ul id="navigation" class="slimmenu">
+        <li>
+          <a href="#">FOR HIM<i class="fa fa-mars" aria-hidden="true"></i></a>
+          <ul class="sub-nav">
+            <li><a href="#">CLOTHING</a></li>
+            <li><a href="#">SHOES</a></li>
+            <li><a href="#">ACCESSORIES</a></li>
+            <li><a href="#"><span class="sale-text">SALE</span></a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">FOR HER<i class="fa fa-venus"></i></a>
+          <ul class="sub-nav">
+            <li><a href="#">CLOTHING</a></li>
+            <li><a href="#">SHOES</a></li>
+            <li><a href="#">ACCESSORIES</a></li>
+            <li><a href="#"><span class="sale-text">SALE</span></a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">NEW COLLECTIONS</a>
+        </li>
+        <li>
+          <a href="#"><span class="sale-text">SALE</span></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<div class="section group sub-nav">
+  <div class="col span_4_of_12">
+    <p>GET 5% OFF YOUR FIRST ORDER</p>
+  </div>
+  <div class="col span_4_of_12">
+    <p>FREE SHIPPING ON EVERYTHING</p>
+  </div>
+  <div class="col span_4_of_12">
+    <p>PRICE MATCH GUARANTEE</p>
+  </div>
+</div>
+
+<div class="section group">
+  <div class="col span_12_of_12">
+    <div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="images/shoes.jpg" />
+    </li>
+    <li>
+      <img src="images/sunglasses.jpg" />
+    </li>
   </ul>
-  <div id="skills" class="singleButton">
-        <a href="https://github.com/kenNg1" class="arrowFade btn dribbbleIcon" target="_blank">See more on my <b>Github</b> profile</a>
+</div>
   </div>
-</section>
-<section id="aboutMe">
-    <div class="col-6">
-      <span>I add value through</span>
-      <div class="tile"><i class="fa fa-paint-brush" aria-hidden="true"></i>CREATIVITY</div>
-      <div class="tile"><i class="fa fa-line-chart" aria-hidden="true"></i>ANALYSIS</div>
-      <div class="tile"><i class="fa fa-users" aria-hidden="true"></i>COLLABORATION</div>
-    </div>
-    <div class="col-6">
-      <span>My Technical Skills</span>
-      <div id="chart"></div>
-    </div>
-</section>
+</div>
 
-<!-- <div class="arrow2 return_scroll">
-  <a href="#backtotop">Return to top</a>
-</div> -->
-<section id="timeline">
-  <span>My Timeline</span>
-<% include ../partials/animatedline %>
-</section>
+<div class="section group gallery">
+  <div class="col span_4_of_12">
+    <div class="feature">
+      <a href="#">
+        <img src="images/accessories.jpg">
+        <p>ACCESSORIES</p>
+      </a>
+    </div>
+    <div class="feature">
+      <a href="#">
+        <img src="images/model.jpg">
+        <p>LATEST FASHION</p>
+      </a>
+    </div>
+  </div>
+  <div class="col span_4_of_12">
+    <div class="feature">
+      <a href="#">
+        <img src="images/girl.jpg"/>
+        <p>GET DRESSED UP</p>
+      </a>
+    </div>
+  </div>
+  <div class="col span_4_of_12">
+    <div class="feature">
+      <a href="#">
+        <img src="images/feet.jpg">
+        <p>FOOTWEAR</p>
+      </a>
+    </div>
+    <div class="feature">
+      <a href="#">
+        <img src="images/flower.jpg">
+        <p>SET FOR SUMMER</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="section group">
+  <div class="col span_6_of_12">
+    <form>
+      Sign up to our email:<br/><input id="email" type="email" name="email"><input id="email-signup" type="button" value="SIGN UP">
+    </form>
+  </div>
+  <div class="col span_6_of_12">
+    <p>Welcome to <strong>DesignClothing.com. </strong> We are a global fashion leader offering all of the latest styles to cater for all tastes and budges with hundereds of items added every week.</p>
+  </div>
+</div>
+
+<div class="section group">
+  <footer>
+    <div class="col span_4_of_12">
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Returns Info</a></li>
+        <li><a href="#">Delivery Info</a></li>
+      </ul>
+    </div>
+    <div class="col span_4_of_12">
+      <ul>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Our Blog</a></li>
+      </ul>
+    </div>
+    <div class="col span_4_of_12">
+      <ul>
+        <li>American Express<i class="fa fa-cc-amex"></i></li>
+        <li>Visa<i class="fa fa-cc-visa"></i></li>
+        <li>Master Card<i class="fa fa-cc-mastercard"></i></li>
+        <li>PayPal<i class="fa fa-cc-paypal"></i></li>
+      </ul>
+    </div>
+  </footer>
+</div>
